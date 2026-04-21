@@ -1,3 +1,5 @@
+# TSC-homework - Istrate Camelia-Elena 334CC
+# InkTime Watch
 
 ## Block Diagram
 
@@ -271,4 +273,14 @@ Power efficiency is improved by:
 * enabling only the peripherals that are needed
 * using a regulated 3.3V rail
 * controlling display-related power stages separately
+
+
+## PCB Top View
+<img width="1301" height="995" alt="image" src="https://github.com/user-attachments/assets/8c29f26a-2f69-4ea7-9701-aaf8c5347d34" />
+
+
+## 3D PCB Render
+<img width="1730" height="1071" alt="image" src="https://github.com/user-attachments/assets/9f602845-7f0a-4885-ba5c-ade7dfb72cb7" />
+
+
 
