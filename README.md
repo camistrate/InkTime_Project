@@ -3,6 +3,33 @@
 
 <img width="1523" height="894" alt="image" src="https://github.com/user-attachments/assets/5340bdfd-afd2-4f2b-b96d-39719dbfa883" />
 
+## Bill of Materials (BOM)
+
+The table below lists the main active components, connectors, and critical electromechanical parts used in the design. Standard passives, RF matching parts, and decoupling capacitors are included in the manufacturing BOM.
+
+| Component / Module | Function | Package / Footprint | JLC / LCSC Part | Datasheet |
+|---|---|---|---|---|
+| **nRF52840-QIAA-R** | Main BLE MCU | aQFN73 (7x7) | [C190794](https://jlcpcb.com/partdetail/NordicSemicon-NRF52840_QIAAR/C190794) | [Nordic nRF52840 Product Specification](https://docs.nordicsemi.com/) |
+| **BQ25180YBGR** | LiPo charger / power-path management | DSBGA-9 | [C3682423](https://jlcpcb.com/partdetail/TexasInstruments-BQ25180YBGR/C3682423) | [TI BQ25180 Datasheet](https://www.ti.com/lit/ds/symlink/bq25180.pdf) |
+| **RT6160AWSC** | 3.3V buck-boost regulator | WLCSP-15 | [C7065276](https://jlcpcb.com/partdetail/Richtek_Tech-RT6160AWSC/C7065276) | [Richtek RT6160A Datasheet](https://www.richtek.com/assets/product_file/RT6160A/DS6160A-05.pdf) |
+| **MAX17048G+T10** | 1-cell LiPo fuel gauge | DFN-8 (2x2) | [C2682616](https://jlcpcb.com/partdetail/AnalogDevices-MAX17048G_T10/C2682616) | [MAX17048 / MAX17049 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf) |
+| **BMA421** | IMU / motion sensing / step counter | LGA-12 (2x2) | [C5242966](https://jlcpcb.com/partdetail/Bosch_Sensortec-BMA421/C5242966) | [Bosch BMA421 Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma421-ds004.pdf) |
+| **DRV2605YZFR** | Haptic driver for ERM motor | VSSOP-10 / DSBGA-9 variant used in sources | [C81079](https://jlcpcb.com/partdetail/TexasInstruments-DRV2605YZFR/C81079) | [TI DRV2605 Datasheet](https://www.ti.com/cn/lit/ds/symlink/drv2605.pdf) |
+| **2450AT18B100E** | 2.4 GHz chip antenna | SMD 3216 / 1206 class | [C5179427](https://jlcpcb.com/partdetail/Johanson_Technology-2450AT18B100E/C5179427) | [Johanson 2450AT18B100E Datasheet](https://www.johansontechnology.com/datasheets/2450AT18B100/2450AT18B100.pdf) |
+| **USBLC6-2SC6Y** | USB ESD protection | SOT-23-6 | [C7519](https://jlcpcb.com/partdetail/Stmicroelectronics-USBLC6_2SC6Y/C7519) | [ST USBLC6-2 Datasheet](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) |
+| **KH-TYPE-C-16P** | USB Type-C connector | 16-pin SMD | [C2765186](https://jlcpcb.com/partdetail/Kinghelm-KH_TYPE_C_16P/C2765186) | [Kinghelm KH-TYPE-C-16P Datasheet](https://datasheet.lcsc.com/lcsc/2012121836_Kinghelm-KH-TYPE-C-16P_C2765186.pdf) |
+| **503480-2400** | 24-pin 0.5 mm FPC connector for E-paper display | 24-pin FPC | [C2857168](https://jlcpcb.com/partdetail/Molex-5034802400/C2857160) | [Molex 503480-2400 Datasheet](https://www.molex.com/en-us/products/part-detail/5034802400) |
+| **DMG2305UX** | P-channel MOSFET for E-paper power control | SOT-23 | [C2940629](https://jlcpcb.com/partdetail/TECHPUBLIC-DMG2305UX/C2940629) | [DMG2305UX Datasheet](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf) |
+| **SI1308EDL-T1-GE3** | MOSFET used in display drive stage | SOT-23 | [C469327](https://jlcpcb.com/partdetail/VishayIntertech-SI1308EDL_T1GE3/C469327) | [SI1308EDL Datasheet](https://www.vishay.com/doc?63399) |
+| **MBR0530** | Schottky diode used in E-paper pump circuit | SOD-123 | [C77336](https://jlcpcb.com/partdetail/78464-MBR0530/C77336) | [MBR0530 Datasheet](https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf) |
+| **EVP-AKE31A / tactile switch** | User input buttons | SMD tactile | [C2845028](https://jlcpcb.com/partdetail/Panasonic-EVP_AKE31A/C2845028) | [Panasonic Tactile Switch Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE3.pdf) |
+| **LCM1027B3605F** | Vibration motor | Wire leads | [C7528806](https://jlcpcb.com/partdetail/7528806-LCM1027B3605F/C7528806) | [LCM1027B3605F Datasheet](https://datasheet.lcsc.com/lcsc/2310131633_LCM-LCM1027B3605F_C7528806.pdf) |
+| **TC2030-IDC** | SWD programming / debug interface | Tag-Connect 6-pin footprint | [Tag-Connect Product Page](https://www.tag-connect.com/product/tc2030-idc-nl) | [TC2030 Documentation](https://www.tag-connect.com/product/tc2030-idc-6-pin-tag-connect-plug-of-nails-spring-pin-cable-with-ribbon-connector) |
+| **32 MHz Crystal** | Main high-frequency crystal for nRF52840 | 2016 | [C5265841](https://jlcpcb.com/partdetail/Huiyuancrystal-HY32MSMD2016CA1R30/C5265841) | [32 MHz Crystal Datasheet](https://www.lcsc.com/product-detail/C7275071.html) |
+| **32.768 kHz Crystal** | Low-frequency RTC crystal | 3215 | [C70509](https://jlcpcb.com/partdetail/NDK-NX3215SA_32_768KHZ_EXS00AMU00466/C70509) | [32.768 kHz Crystal Datasheet](https://ro.mouser.com/ProductDetail/NDK/NX3215SA-32.768K-STD-MUS-2) |
+| **E-Paper Display 1.54 inch** | Main display module | 24-pin FPC | [C359944](https://jlcpcb.com/partdetail/Waveshare-4_2inch_e_PaperModule/C359944) | [WSH-12561 Datasheet](https://www.tme.eu/Document/0ca57a8ffbcd57b5bca53252eb9d6ec3/WSH-12561.pdf) |
+| **LiPo Battery 250 mAh** | Main energy storage | Battery pack | - | [AKY0106 Datasheet](https://www.tme.eu/Document/b9e12bf26ad0ba929a22ab5d58f022cd/AKY0106.pdf) |
+
 ## Hardware Description
 
 ### MCU - nRF52840
